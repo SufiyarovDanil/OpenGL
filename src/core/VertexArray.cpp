@@ -32,6 +32,13 @@ namespace core
 
 	void VertexArray::destroy()
 	{
+		if (is_destroyed())
+		{
+			return;
+		}
+
+		GLObject::destroy();
+
 		glDeleteVertexArrays(1, &object_id);
 	}
 

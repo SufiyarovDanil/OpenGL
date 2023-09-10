@@ -54,7 +54,7 @@ int main(void)
 
 	core::ShaderProgram shader_program(vertex_shader, fragment_shader);
 
-	core::Texture2D texture("res/textures/OpenGL.jpg", 0);
+	core::Texture2D texture("res/textures/fucking_deer.jpg", 0);
 
 	va.unbind();
 	vb.unbind();

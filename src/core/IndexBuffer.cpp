@@ -33,6 +33,13 @@ namespace core
 
     void IndexBuffer::destroy()
     {
+        if (is_destroyed())
+        {
+            return;
+        }
+
+        GLObject::destroy();
+
         glDeleteBuffers(1, &object_id);
     }
 }
